@@ -1,12 +1,12 @@
 export TARGET_ARCH="arm64-v8a"
 export FOX_VERSION="R12.1"
-export OF_MAINTAINER=Wishmasterflo
+export OF_MAINTAINER=kronflux
 export TW_DEFAULT_LANGUAGE="en"
-export FOX_BUILD_DEVICE="OnePlus8T"
+export FOX_BUILD_DEVICE="billie"
 export ALLOW_MISSING_DEPENDENCIES=true
 export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
-export TARGET_DEVICE_ALT="kebab, Kebab, instantnoodle, instantnoodlep, lemonades, lemonkebab, OnePlus8, OnePlus 8, OnePlus8T, OnePlus 8T, OnePlus 8 Pro"
-export OF_TARGET_DEVICES="kebab, Kebab, instantnoodle, instantnoodlep, lemonades, lemonkebab, OnePlus8, OnePlus 8, OnePlus8T, OnePlus 8T, OnePlus 8 Pro"
+export TARGET_DEVICE_ALT="billie, OnePlusN10"
+export OF_TARGET_DEVICES="billie, OnePlusN10"
 export OF_USE_MAGISKBOOT=1
 export OF_USE_MAGISKBOOT_FOR_ALL_PATCHES=1
 export OF_DONT_PATCH_ENCRYPTED_DEVICE=1

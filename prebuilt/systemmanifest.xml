@@ -145,8 +145,11 @@
         <fqname>@1.0::IKeystoreExt/default</fqname>
     </hal>
     <system-sdk>
+        <version>27</version>
         <version>28</version>
         <version>29</version>
         <version>30</version>
+        <version>31</version>
+        <version>32</version>
     </system-sdk>
 </manifest>

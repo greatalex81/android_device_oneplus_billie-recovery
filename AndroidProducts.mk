@@ -15,5 +15,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/ofox_opkona.mk
+    $(LOCAL_DIR)/ofox_billie.mk
 
+COMMON_LUNCH_CHOICES := \
+    ofox_billie-eng \
+    ofox_billie-userdebug

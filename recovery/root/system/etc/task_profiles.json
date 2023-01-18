@@ -20,6 +20,11 @@
       "Controller": "cpuset",
       "File": "audio-app/cpus"
     },
+    {
+      "Name": "CameraAppCapacityCPUs",
+      "Controller": "cpuset",
+      "File": "camera-app/cpus"
+    },
 
     {
       "Name": "MemLimit",
@@ -177,6 +182,19 @@
           {
             "Controller": "schedtune",
             "Path": "audio-app"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "CameraAppPerformance",
+      "Actions" : [
+        {
+          "Name" : "JoinCgroup",
+          "Params" :
+          {
+            "Controller": "schedtune",
+            "Path": "camera-app"
           }
         }
       ]
@@ -407,6 +425,19 @@
         }
       ]
     },
+    {
+      "Name": "CameraAppCapacity",
+      "Actions" : [
+        {
+          "Name" : "JoinCgroup",
+          "Params" :
+          {
+            "Controller": "cpuset",
+            "Path": "camera-app"
+          }
+        }
+      ]
+    },
 
     {
       "Name": "BlkIOForeground",
@@ -495,7 +526,7 @@
           "Name": "SetTimerSlack",
           "Params":
           {
-            "Slack": "40000000"
+            "Slack": "10000000"
           }
         }
       ]
@@ -646,6 +677,10 @@
       "Profiles": [ "RealtimePerformance", "MaxIoPriority", "TimerSlackNormal" ]
     },
     {
+      "Name": "SCHED_SP_CAMERA_APP",
+      "Profiles": [ "MaxPerformance", "MaxIoPriority", "TimerSlackNormal" ]
+    },
+    {
       "Name": "CPUSET_SP_DEFAULT",
       "Profiles": [ "TimerSlackNormal" ]
     },
@@ -664,6 +699,10 @@
     {
       "Name": "CPUSET_SP_SYSTEM",
       "Profiles": [ "ServiceCapacityLow", "TimerSlackNormal" ]
+    },
+    {
+      "Name": "CPUSET_SP_CAMERA_APP",
+      "Profiles": [  "MaxPerformance", "CameraAppCapacity", "MaxIoPriority", "TimerSlackNormal" ]
     },
     {
       "Name": "CPUSET_SP_RESTRICTED",
