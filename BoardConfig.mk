@@ -194,7 +194,7 @@ TW_NO_EXFAT_FUSE := true
 TW_NO_SCREEN_TIMEOUT := true
 TW_NO_SCREEN_BLANK := true
 TW_SYSTEM_BUILD_PROP_ADDITIONAL_PATHS := build.prop
-TW_OVERRIDE_SYSTEM_PROPS := "ro.build.fingerprint=ro.system.build.fingerprint"
+TW_OVERRIDE_SYSTEM_PROPS := "ro.build.fingerprint=ro.system.build.fingerprint;ro.build.version.incremental"
 TW_RECOVERY_ADDITIONAL_RELINK_BINARY_FILES += \
     $(TARGET_OUT_EXECUTABLES)/ashmemd \
     $(TARGET_OUT_EXECUTABLES)/strace
