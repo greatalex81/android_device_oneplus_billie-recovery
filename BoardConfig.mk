@@ -177,6 +177,9 @@ TW_INCLUDE_FASTBOOTD := true
 PRODUCT_ENFORCE_VINTF_MANIFEST := true
 TW_BACKUP_EXCLUSIONS := /data/nandswap
 
+# OrangeFox Specific Build Flags
+FOX_USE_SPECIFIC_MAGISK_ZIP := $(DEVICE_PATH)/magisk/Magisk-v25.2.zip
+
 # TWRP specific build flags
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 TARGET_RECOVERY_PIXEL_FORMAT := BGRA_8888
