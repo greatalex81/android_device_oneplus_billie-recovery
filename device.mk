@@ -19,6 +19,9 @@ PRODUCT_PLATFORM := lito
 # A/B support
 AB_OTA_UPDATER := true
 
+# fscrypt policy
+TW_USE_FSCRYPT_POLICY := 2
+
 # A/B updater updatable partitions list. Keep in sync with the partition list
 # with "_a" and "_b" variants in the device. Note that the vendor can add more
 # more partitions to this list for the bootloader and radio.
@@ -96,8 +99,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
         ro.crypto.allow_encrypt_override=true \
 	ro.crypto.dm_default_key.options_format.version=2 \
 	ro.crypto.volume.filenames_mode=aes-256-cts \
-	ro.crypto.volume.metadata.method=dm-default-key
-
+	ro.crypto.volume.metadata.method=dm-default-key \
+	ro.crypto.volume.options=::v2
 # Hidl Service
 PRODUCT_ENFORCE_VINTF_MANIFEST := true
 
