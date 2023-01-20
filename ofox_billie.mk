@@ -16,6 +16,8 @@
 
 # Release name
 PRODUCT_RELEASE_NAME := billie
+TARGET_DEVICE_CODENAME := billie
+TARGET_DEVICE := billie
 
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/twrp/config/common.mk)
