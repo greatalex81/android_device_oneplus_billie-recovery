@@ -16,7 +16,7 @@
 	export FDEVICE="billie"
    	export TW_DEFAULT_LANGUAGE="en"
 	export LC_ALL="C"
-	export FOX_DEVICE="billie"
+	export FOX_BUILD_DEVICE="billie"
 	export OF_AB_DEVICE_WITH_RECOVERY_PARTITION=1
  	export ALLOW_MISSING_DEPENDENCIES=true
 	export OF_AB_DEVICE=1
