@@ -10,9 +10,6 @@ LOCAL_PATH := device/oneplus/billie
 #SHIPPING API
 PRODUCT_SHIPPING_API_LEVEL := 29
 
-#VNDK API
-PRODUCT_TARGET_VNDK_VERSION := 32
-
 # define hardware platform
 PRODUCT_PLATFORM := lito
 
