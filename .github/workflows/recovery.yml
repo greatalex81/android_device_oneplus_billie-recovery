@@ -1,0 +1,1 @@
+. build/envsetup.sh; export ALLOW_MISSING_DEPENDENCIES=true; export LC_ALL=C; lunch ofox_billie-eng; make -j$(nproc --all) recoveryimage
